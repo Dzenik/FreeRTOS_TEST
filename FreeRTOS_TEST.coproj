@@ -4,7 +4,7 @@
     <Device manufacturerId="9" manufacturerName="ST" chipId="329" chipName="STM32F103ZE" boardId="" boardName=""/>
     <BuildOption>
       <Compile>
-        <Option name="OptimizationLevel" value="4"/>
+        <Option name="OptimizationLevel" value="0"/>
         <Option name="UseFPU" value="0"/>
         <Option name="UserEditCompiler" value=""/>
         <Includepaths>
@@ -22,6 +22,7 @@
         <Option name="UserEditLinkder" value=""/>
         <Option name="UseMemoryLayout" value="1"/>
         <Option name="Library" value="Not use C Library"/>
+        <Option name="Printf" value="0"/>
         <LinkedLibraries/>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00080000" startValue="0x08000000"/>
@@ -65,6 +66,7 @@
     <ExcludeFile/>
   </Target>
   <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
     <Component id="50" name="CMSIS core" path="" type="2"/>
     <Component id="440" name="RCC" path="" type="2"/>
     <Component id="444" name="GPIO" path="" type="2"/>
@@ -77,19 +79,19 @@
     <Component id="467" name="MISC" path="" type="2"/>
   </Components>
   <Files>
-    <File name="FreeRTOS/inc/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
     <File name="FreeRTOS/Common/death.c" path="FreeRTOS/Demo/Common/Minimal/death.c" type="1"/>
+    <File name="FreeRTOS/inc/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
     <File name="FreeRTOS/inc" path="" type="2"/>
     <File name="Board/ministm32.c" path="Board/ministm32.c" type="1"/>
-    <File name="FreeRTOS/Common/includes/serial.h" path="FreeRTOS/Demo/Common/include/serial.h" type="1"/>
     <File name="stm_lib/inc/stm32f10x_tim.h" path="stm_lib/inc/stm32f10x_tim.h" type="1"/>
-    <File name="FreeRTOS/Common/BlockQ.c" path="FreeRTOS/Demo/Common/Minimal/BlockQ.c" type="1"/>
+    <File name="FreeRTOS/Common/includes/serial.h" path="FreeRTOS/Demo/Common/include/serial.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
+    <File name="FreeRTOS/Common/BlockQ.c" path="FreeRTOS/Demo/Common/Minimal/BlockQ.c" type="1"/>
     <File name="Board/ministm32_lcd.c" path="Board/ministm32_lcd.c" type="1"/>
     <File name="FreeRTOS/inc/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
     <File name="stm_lib/src/stm32f10x_tim.c" path="stm_lib/src/stm32f10x_tim.c" type="1"/>
-    <File name="FreeRTOS/inc/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="FreeRTOS/inc/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
     <File name="FreeRTOS/inc/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
     <File name="FreeRTOS/Common/includes/flash.h" path="FreeRTOS/Demo/Common/include/flash.h" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f10x_hd.c" path="cmsis_boot/startup/startup_stm32f10x_hd.c" type="1"/>
@@ -99,6 +101,7 @@
     <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
     <File name="stm_lib/inc/stm32f10x_flash.h" path="stm_lib/inc/stm32f10x_flash.h" type="1"/>
     <File name="Board/ministm32.h" path="Board/ministm32.h" type="1"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
     <File name="FreeRTOS/Common/blocktim.c" path="FreeRTOS/Demo/Common/Minimal/blocktim.c" type="1"/>
     <File name="cmsis/core_cm3.c" path="cmsis/core_cm3.c" type="1"/>
     <File name="stm_lib/inc/stm32f10x_spi.h" path="stm_lib/inc/stm32f10x_spi.h" type="1"/>
@@ -107,36 +110,37 @@
     <File name="stm_lib/src/stm32f10x_usart.c" path="stm_lib/src/stm32f10x_usart.c" type="1"/>
     <File name="FreeRTOS/Common/semtest.c" path="FreeRTOS/Demo/Common/Minimal/semtest.c" type="1"/>
     <File name="FreeRTOS/inc/croutine.h" path="FreeRTOS/Source/include/croutine.h" type="1"/>
-    <File name="FreeRTOS/inc/task.h" path="FreeRTOS/Source/include/task.h" type="1"/>
     <File name="FreeRTOS/timers.c" path="FreeRTOS/Source/timers.c" type="1"/>
-    <File name="FreeRTOS/Common/includes/integer.h" path="FreeRTOS/Demo/Common/include/integer.h" type="1"/>
+    <File name="FreeRTOS/inc/task.h" path="FreeRTOS/Source/include/task.h" type="1"/>
     <File name="FreeRTOS/Common/includes/partest.h" path="FreeRTOS/Demo/Common/include/partest.h" type="1"/>
+    <File name="FreeRTOS/Common/includes/integer.h" path="FreeRTOS/Demo/Common/include/integer.h" type="1"/>
     <File name="stm_lib/src/stm32f10x_gpio.c" path="stm_lib/src/stm32f10x_gpio.c" type="1"/>
-    <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
-    <File name="FreeRTOS/queue.c" path="FreeRTOS/Source/queue.c" type="1"/>
     <File name="LCD_Message.h" path="LCD_Message.h" type="1"/>
+    <File name="FreeRTOS/queue.c" path="FreeRTOS/Source/queue.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
     <File name="stm_lib/inc/stm32f10x_usart.h" path="stm_lib/inc/stm32f10x_usart.h" type="1"/>
     <File name="FreeRTOS/inc/StackMacros.h" path="FreeRTOS/Source/include/StackMacros.h" type="1"/>
-    <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
     <File name="FreeRTOS/src/port.c" path="FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" type="1"/>
-    <File name="FreeRTOS/heap_2.c" path="FreeRTOS/Source/portable/MemMang/heap_2.c" type="1"/>
+    <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
+    <File name="stdio" path="" type="2"/>
     <File name="stm_lib/inc/misc.h" path="stm_lib/inc/misc.h" type="1"/>
-    <File name="Board" path="" type="2"/>
+    <File name="FreeRTOS/heap_2.c" path="FreeRTOS/Source/portable/MemMang/heap_2.c" type="1"/>
     <File name="FreeRTOS/inc/list.h" path="FreeRTOS/Source/include/list.h" type="1"/>
+    <File name="Board" path="" type="2"/>
     <File name="FreeRTOS/Common/integer.c" path="FreeRTOS/Demo/Common/Minimal/integer.c" type="1"/>
     <File name="FreeRTOS/Common/includes/BlockQ.h" path="FreeRTOS/Demo/Common/include/BlockQ.h" type="1"/>
-    <File name="FreeRTOS/Common" path="" type="2"/>
     <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
-    <File name="stm_lib/src/stm32f10x_exti.c" path="stm_lib/src/stm32f10x_exti.c" type="1"/>
+    <File name="FreeRTOS/Common" path="" type="2"/>
     <File name="Tests/ParTest.c" path="Tests/ParTest.c" type="1"/>
-    <File name="Tests" path="" type="2"/>
+    <File name="stm_lib/src/stm32f10x_exti.c" path="stm_lib/src/stm32f10x_exti.c" type="1"/>
     <File name="FreeRTOS/Common/PollQ.c" path="FreeRTOS/Demo/Common/Minimal/PollQ.c" type="1"/>
+    <File name="Tests" path="" type="2"/>
     <File name="FreeRTOS/Common/includes/semtest.h" path="FreeRTOS/Demo/Common/include/semtest.h" type="1"/>
-    <File name="FreeRTOS/tasks.c" path="FreeRTOS/Source/tasks.c" type="1"/>
     <File name="stm_lib/src/stm32f10x_rcc.c" path="stm_lib/src/stm32f10x_rcc.c" type="1"/>
+    <File name="FreeRTOS/tasks.c" path="FreeRTOS/Source/tasks.c" type="1"/>
     <File name="FreeRTOS/inc/queue.h" path="FreeRTOS/Source/include/queue.h" type="1"/>
-    <File name="Tests/serial.c" path="Tests/serial.c" type="1"/>
     <File name="FreeRTOS/inc/FreeRTOS.h" path="FreeRTOS/Source/include/FreeRTOS.h" type="1"/>
+    <File name="Tests/serial.c" path="Tests/serial.c" type="1"/>
     <File name="stm_lib/src" path="" type="2"/>
     <File name="cmsis" path="" type="2"/>
     <File name="stm_lib" path="" type="2"/>
@@ -146,18 +150,19 @@
     <File name="cmsis_boot/system_stm32f10x.h" path="cmsis_boot/system_stm32f10x.h" type="1"/>
     <File name="FreeRTOS/Common/includes" path="" type="2"/>
     <File name="stm_lib/inc/stm32f10x_rcc.h" path="stm_lib/inc/stm32f10x_rcc.h" type="1"/>
+    <File name="syscalls" path="" type="2"/>
     <File name="FreeRTOS/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
     <File name="Board/lcd_font.h" path="Board/lcd_font.h" type="1"/>
-    <File name="FreeRTOS/Common/includes/comtest2.h" path="FreeRTOS/Demo/Common/include/comtest2.h" type="1"/>
     <File name="FreeRTOS/Common/includes/death.h" path="FreeRTOS/Demo/Common/include/death.h" type="1"/>
+    <File name="FreeRTOS/Common/includes/comtest2.h" path="FreeRTOS/Demo/Common/include/comtest2.h" type="1"/>
     <File name="FreeRTOS/src/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h" type="1"/>
     <File name="Board/ministm32_lcd.h" path="Board/ministm32_lcd.h" type="1"/>
     <File name="FreeRTOS/inc/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
-    <File name="FreeRTOS" path="" type="2"/>
+    <File name="FreeRTOS/Common/flash.c" path="FreeRTOS/Demo/Common/Minimal/flash.c" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
+    <File name="FreeRTOS" path="" type="2"/>
     <File name="FreeRTOSConfig.h" path="FreeRTOSConfig.h" type="1"/>
     <File name="FreeRTOS/Common/comtest.c" path="FreeRTOS/Demo/Common/Minimal/comtest.c" type="1"/>
-    <File name="FreeRTOS/Common/flash.c" path="FreeRTOS/Demo/Common/Minimal/flash.c" type="1"/>
     <File name="FreeRTOS/Common/includes/blocktim.h" path="FreeRTOS/Demo/Common/include/blocktim.h" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
     <File name="Tests/timertest.c" path="Tests/timertest.c" type="1"/>

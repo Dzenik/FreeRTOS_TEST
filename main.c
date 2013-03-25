@@ -276,35 +276,35 @@ static void vCheckTask( void *pvParameters )
 
         if( xAreBlockingQueuesStillRunning() != pdTRUE )
 		{
-			xMessage.pcMessage = "ERROR IN BLOCK Q\n";
+			xMessage.pcMessage = (signed char *)"ERROR IN BLOCK Q\n";
 		}
 		else if( xAreBlockTimeTestTasksStillRunning() != pdTRUE )
 		{
-			xMessage.pcMessage = "ERROR IN BLOCK TIME\n";
+			xMessage.pcMessage = (signed char *)"ERROR IN BLOCK TIME\n";
 		}
         else if( xAreSemaphoreTasksStillRunning() != pdTRUE )
         {
-            xMessage.pcMessage = "ERROR IN SEMAPHORE\n";
+            xMessage.pcMessage = (signed char *)"ERROR IN SEMAPHORE\n";
         }
         else if( xArePollingQueuesStillRunning() != pdTRUE )
         {
-            xMessage.pcMessage = "ERROR IN POLL Q\n";
+            xMessage.pcMessage = (signed char *)"ERROR IN POLL Q\n";
         }
         else if( xIsCreateTaskStillRunning() != pdTRUE )
         {
-            xMessage.pcMessage = "ERROR IN CREATE\n";
+            xMessage.pcMessage = (signed char *)"ERROR IN CREATE\n";
         }
         else if( xAreIntegerMathsTaskStillRunning() != pdTRUE )
         {
-            xMessage.pcMessage = "ERROR IN MATH\n";
+            xMessage.pcMessage = (signed char *)"ERROR IN MATH\n";
         }
 		else if( xAreComTestTasksStillRunning() != pdTRUE )
 		{
-			xMessage.pcMessage = "ERROR IN COM TEST\n";
+			xMessage.pcMessage = (signed char *)"ERROR IN COM TEST\n";
 		}
 		else
 		{
-			sprintf( ( portCHAR * ) cPassMessage, "PASS [%uns]\n", ( ( unsigned portLONG ) usMaxJitter ) * mainNS_PER_CLOCK );
+			sprintf( ( portCHAR * ) cPassMessage, "PASS [%uns]\n",(unsigned int) (( ( unsigned portLONG ) usMaxJitter ) * mainNS_PER_CLOCK) );
 		}
 
 		/* Send the message to the LCD gatekeeper for display. */

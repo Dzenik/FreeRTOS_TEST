@@ -1,1 +1,40 @@
-<history/>
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.3 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=FreeRTOS_TEST.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\FreeRTOS_TEST -TC:\CooCox\CoIDE\configuration\ProgramData\FreeRTOS_TEST/arm-gcc-link.ld -g">
+      <target file="FreeRTOS_TEST.elf" lastModified="13da1c7ae59">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="13da1c45523"/>
+         <source file="..\obj\death.o" lastModified="13da1c455b7"/>
+         <source file="..\obj\ministm32_lcd.o" lastModified="13da1c456eb"/>
+         <source file="..\obj\core_cm3.o" lastModified="13da1c45756"/>
+         <source file="..\obj\flash.o" lastModified="13da1c457d8"/>
+         <source file="..\obj\BlockQ.o" lastModified="13da1c45864"/>
+         <source file="..\obj\semtest.o" lastModified="13da1c458ff"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="13da1c4599c"/>
+         <source file="..\obj\startup_stm32f10x_hd.o" lastModified="13da1c459eb"/>
+         <source file="..\obj\integer.o" lastModified="13da1c45a67"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="13da1c45b12"/>
+         <source file="..\obj\main.o" lastModified="13da1c45c83"/>
+         <source file="..\obj\timers.o" lastModified="13da1c45ce6"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="13da1c45def"/>
+         <source file="..\obj\ministm32.o" lastModified="13da1c45e92"/>
+         <source file="..\obj\timertest.o" lastModified="13da1c45f14"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="13da1c45fb5"/>
+         <source file="..\obj\tasks.o" lastModified="13da1c4614f"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="13da1c46298"/>
+         <source file="..\obj\comtest.o" lastModified="13da1c4631c"/>
+         <source file="..\obj\list.o" lastModified="13da1c46399"/>
+         <source file="..\obj\syscalls.o" lastModified="13da1c656f1"/>
+         <source file="..\obj\stm32f10x_flash.o" lastModified="13da1c46470"/>
+         <source file="..\obj\blocktim.o" lastModified="13da1c464ed"/>
+         <source file="..\obj\PollQ.o" lastModified="13da1c4656d"/>
+         <source file="..\obj\port.o" lastModified="13da1c465d4"/>
+         <source file="..\obj\queue.o" lastModified="13da1c466bf"/>
+         <source file="..\obj\croutine.o" lastModified="13da1c4673b"/>
+         <source file="..\obj\misc.o" lastModified="13da1c467c5"/>
+         <source file="..\obj\serial.o" lastModified="13da1c4686a"/>
+         <source file="..\obj\ParTest.o" lastModified="13da1c468f7"/>
+         <source file="..\obj\stm32f10x_spi.o" lastModified="13da1c469ac"/>
+         <source file="..\obj\heap_2.o" lastModified="13da1c46a30"/>
+      </target>
+   </processor>
+</history>
