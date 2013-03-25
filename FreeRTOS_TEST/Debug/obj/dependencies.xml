@@ -345,11 +345,11 @@
       </source>
       <source file="..\..\..\FreeRTOS\Source\portable\oWatcom\16BitDOS\Flsh186\portmacro.h" lastModified="13da0d6c735">
       </source>
-      <source file="..\..\..\FreeRTOS\Demo\Common\include\flash.h" lastModified="13da0d6296e">
+      <source file="..\..\..\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" lastModified="13da0d6bfc2">
       </source>
       <source file="..\..\..\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" lastModified="13da0d6c0c7">
       </source>
-      <source file="..\..\..\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" lastModified="13da0d6bfc2">
+      <source file="..\..\..\FreeRTOS\Demo\Common\include\flash.h" lastModified="13da0d6296e">
       </source>
       <source file="..\..\..\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" lastModified="13da0d6c3a8">
       </source>
@@ -359,17 +359,9 @@
          <include file="..\..\..\FreeRTOS\Source\include\queue.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\timers.h"/>
       </source>
-      <source file="..\..\..\stm32f10x_conf.h" lastModified="13da0d6cc30">
-         <include file="..\..\..\stm_lib\inc\stm32f10x_exti.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_spi.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
-         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      <source file="..\..\..\Board\ministm32_lcd.h" lastModified="13da0d51c26">
       </source>
       <source file="..\..\..\FreeRTOSConfig.h" lastModified="13da0d6c7a7">
-      </source>
-      <source file="..\..\..\Board\ministm32_lcd.h" lastModified="13da0d51c26">
       </source>
       <source file="..\..\..\FreeRTOS\Demo\Common\include\BlockQ.h" lastModified="13da0d62850">
       </source>
@@ -386,25 +378,6 @@
       </source>
       <source file="..\..\..\stm_lib\inc\stm32f10x_tim.h" lastModified="13da0d6c88f">
          <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
-      </source>
-      <source file="..\..\..\main.c" lastModified="13da1bc7b28">
-         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
-         <include file="..\..\..\stm32f10x_conf.h"/>
-         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
-         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
-         <include file="..\..\..\FreeRTOS\Source\include\queue.h"/>
-         <include file="..\..\..\Board\ministm32.h"/>
-         <include file="..\..\..\Board\ministm32_lcd.h"/>
-         <include file="..\..\..\LCD_Message.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\BlockQ.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\death.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\integer.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\blocktim.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\partest.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\semtest.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\PollQ.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\flash.h"/>
-         <include file="..\..\..\FreeRTOS\Demo\Common\include\comtest2.h"/>
       </source>
       <source file="..\..\..\FreeRTOS\Source\include\croutine.h" lastModified="13da0d6bf45">
          <include file="..\..\..\FreeRTOS\Source\include\list.h"/>

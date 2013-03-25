@@ -236,7 +236,8 @@ static void vGPIOInitialise( void )
 
 static void prvConfigureLCD( void )
 {
-
+	LCD_Configuration();	// ministm32_lcd.c
+	LCD_Initializtion();
 }
 
 void vLCDTask( void *pvParameters )

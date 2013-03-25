@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.7.3 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=FreeRTOS_TEST.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\FreeRTOS_TEST -TC:\CooCox\CoIDE\configuration\ProgramData\FreeRTOS_TEST/arm-gcc-link.ld -g">
-      <target file="FreeRTOS_TEST.elf" lastModified="13da1c7ae59">
+      <target file="FreeRTOS_TEST.elf" lastModified="13da1d60ed0">
          <source file="..\obj\stm32f10x_tim.o" lastModified="13da1c45523"/>
          <source file="..\obj\death.o" lastModified="13da1c455b7"/>
          <source file="..\obj\ministm32_lcd.o" lastModified="13da1c456eb"/>
@@ -13,7 +13,7 @@
          <source file="..\obj\startup_stm32f10x_hd.o" lastModified="13da1c459eb"/>
          <source file="..\obj\integer.o" lastModified="13da1c45a67"/>
          <source file="..\obj\stm32f10x_gpio.o" lastModified="13da1c45b12"/>
-         <source file="..\obj\main.o" lastModified="13da1c45c83"/>
+         <source file="..\obj\main.o" lastModified="13da1d60aad"/>
          <source file="..\obj\timers.o" lastModified="13da1c45ce6"/>
          <source file="..\obj\stm32f10x_rcc.o" lastModified="13da1c45def"/>
          <source file="..\obj\ministm32.o" lastModified="13da1c45e92"/>
