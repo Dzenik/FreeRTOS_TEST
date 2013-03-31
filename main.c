@@ -121,7 +121,10 @@ int main(void)
   debug();
 #endif
 	/* Set up the clocks and memory interface. */
-	prvSetupHardware();
+//	prvSetupHardware();
+	Board_Init();
+
+	LED_Config();
 
 	/* Create the queue used by the LCD task.  Messages for display on the LCD
 	are received via this queue. */
@@ -236,7 +239,7 @@ static void vGPIOInitialise( void )
 
 static void prvConfigureLCD( void )
 {
-	LCD_Configuration();	// ministm32_lcd.c
+//	LCD_Configuration();	// ministm32_lcd.c
 	LCD_Initializtion();
 }
 
